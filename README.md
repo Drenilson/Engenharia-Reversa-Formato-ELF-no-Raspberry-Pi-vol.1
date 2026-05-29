@@ -868,36 +868,36 @@ __libc_start_main
 ...
 Olá, ELF! Estou aprendendo Engenharia Reversa!
 ...
-GCC: (Debian 12.2.0-14) 12.2.0
+GCC: (Debian 14.2.0-19) 14.2.0
 ```
 
 > **Dica de reversing**: Em malwares, `strings` revela IPs, URLs, mensagens, nomes de arquivos e muito mais — sem nem precisar executar o binário!
 
 
-# 5. Parte Prática com Editor Hex (ht)
+# 5. Parte Prática com Editor Hex (ht / hte)
 
-## O que é o `ht`?
+## O que é o `hte`?
 
-O `ht` (HT Editor) é um editor hexadecimal e disassembler que roda **direto no terminal**. Diferente de outros hex editors, ele consegue entender o formato ELF e navegar pelas estruturas.
+O `hte` (HT Editor) é um editor hexadecimal e disassembler que roda **direto no terminal**. Diferente de outros hex editors, ele consegue entender o formato ELF e navegar pelas estruturas.
 
 ```bash
 # Verificar se está instalado
-which ht
+which hte
 
 # Se não estiver:
-sudo apt install -y ht
+sudo apt install -y hte
 ```
 
 ---
 
-## Abrindo um binário ELF no `ht`
+## Abrindo um binário ELF no `hte`
 
 ```bash
 # Ir para o diretório dos nossos binários
 cd ~/estudos_elf
 
-# Abrir o hello_64 no ht
-ht hello_64
+# Abrir o hello_64 no hte
+hte hello_64
 ```
 
 Você verá uma tela assim (adaptada para texto):
@@ -916,7 +916,7 @@ Você verá uma tela assim (adaptada para texto):
 ```
 
 
-## Comandos essenciais do `ht`
+## Comandos essenciais do `hte`
 
 ```
 ┌──────────────────────────────────────────────────────┐
@@ -938,7 +938,7 @@ Você verá uma tela assim (adaptada para texto):
 ```
 
 
-## Analisando o ELF byte a byte no `ht`
+## Analisando o ELF byte a byte no `hte`
 
 ### Exercício 1 — Identificar o Magic Number
 
@@ -954,7 +954,7 @@ Offset    Hex              ASCII
 - `4C` → `'L'`
 - `46` → `'F'`
 
-> Confirmado: é um ELF!
+> Confirmado: é um ELF!!!
 
 
 ### Exercício 2 — Identificar a classe (32 ou 64 bit)
@@ -996,16 +996,16 @@ Offset 0x12:  b7 00
 Como é Little-Endian, lemos como `0x00B7` = **183** = `EM_AARCH64`.
 
 
-## Comparando ELF32 vs ELF64 no `ht` lado a lado
+## Comparando ELF32 vs ELF64 no `hte` lado a lado
 
 Abra os dois arquivos e navegue para o offset `0x04` em cada um:
 
 ```bash
 # Terminal 1
-ht hello_64
+hte hello_64
 
 # Terminal 2 (novo terminal)
-ht hello_32
+hte hello_32
 ```
 
 ```
@@ -1081,6 +1081,8 @@ Offset  Bytes                    Significado
 > **Uma última palavra motivadora**: Engenharia Reversa parece intimidadora no início porque você está lendo a "linguagem nativa" do computador (bytes brutos, offsets, endianness). Mas você já provou que consegue! Você leu um ELF Header byte a byte com suas próprias mãos. Cada vez que você abre um binário, você está vendo o mundo como o kernel vê. Continue explorando e bora lá pro volume 2!
 
 
-*Guia elaborado para estudantes de Segurança e Engenharia Reversa — Formato ELF v1.0*  
+*Guia elaborado para estudantes e entusiastas de Cibersegurança e Engenharia Reversa — Formato ELF vol1*  
 *Ambiente: Raspberry Pi 4, ARM64 (AArch64), Raspberry Pi OS 64-bit*
-Até lá!
+
+Espero que tenham gostado
+Um grande abraço e até a próxima!
