@@ -575,11 +575,9 @@ Este é o comando mais importante para começar:
 readelf -h hello_64
 ```
 
-Saída completa comentada:
+Saída completa:
 
 ```
-*Saída:*
-
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
   Class:                             ELF64
@@ -600,9 +598,12 @@ ELF Header:
   Size of section headers:           64 (bytes)
   Number of section headers:         27
   Section header string table index: 26
+```
 
+Agora vamos entender sobre a saída que acabamos de ver:
 
-*Comentário sobre ELF Header:*
+```
+ ELF Header:
 
 Magic: 7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
 
