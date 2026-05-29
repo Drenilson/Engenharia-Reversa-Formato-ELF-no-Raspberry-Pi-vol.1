@@ -1,5 +1,5 @@
 # Engenharia-Reversa-Formato-ELF-no-Raspberry-Pi-4-mB-vol.1
-*Formato ELF para Iniciantes - Análise prática no Raspberry Pi 4 (ARM64)*
+*Formato ELF para Iniciantes - Análise prática no Raspberry Pi 4 modelo:B 8GB (ARM64)*
 
 
 > **Para quem é este guia?**
