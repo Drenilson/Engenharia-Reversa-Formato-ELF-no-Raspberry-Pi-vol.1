@@ -308,7 +308,7 @@ Compile para 32-bit (arm) quando:
 
 ### Instalando suporte a 32-bit no Raspberry Pi OS 64-bit
 
-Se quiser compilar binários ARM 32-bit no seu Pi 64-bit:
+Se quiser compilar binários ARM 32-bit no seu Pi 4 64-bit:
 
 ```bash
 # Habilitar arquitetura armhf
