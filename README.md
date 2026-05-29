@@ -240,7 +240,7 @@ getconf LONG_BIT
 arch
 ```
 
-No Raspberry Pi 4 com Raspberry Pi OS de 64 bits, você verá:
+No Raspberry Pi 4 com OS de 64 bits, você verá:
 
 ```
 $ uname -m
