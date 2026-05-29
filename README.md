@@ -1,5 +1,5 @@
 # Engenharia-Reversa-Formato-ELF-no-Raspberry-Pi-vol.1
-*Formato ELF para Iniciantes V1 - Análise prática no Raspberry Pi 4 (ARM64)*
+*Formato ELF para Iniciantes - Análise prática no Raspberry Pi 4 (ARM64)*
 
 
 > **Para quem é este guia?**
@@ -133,7 +133,7 @@ Abra o terminal do seu Raspberry Pi e vamos instalar tudo de uma vez. Esses coma
 sudo apt update && sudo apt upgrade -y
 ```
 
-> Cuidado nunca é demais.
+> Cuidado nunca é demais, né...
 
 
 ### Passo 2 — Instalar as ferramentas principais
@@ -366,7 +366,7 @@ int main(void) {
 Salve com `Ctrl+O`, `Enter`, e saia com `Ctrl+X`.
 
 
-## Compilando para 64-bit (AArch64) — o padrão do Pi 4
+## Compilando para 64-bit (AArch64) — o padrão do Raspberry Pi 4
 
 ```bash
 # Compilação padrão (64-bit no Raspberry Pi OS 64-bit)
@@ -451,10 +451,12 @@ dynamically linked, interpreter /lib/ld-linux-armhf.so.3,
 BuildID[sha1]=..., for GNU/Linux 3.2.0, not stripped
 ```
 
-> **Nota**: O `hello_32` **não vai executar diretamente** no Raspberry Pi OS puro de 64-bit sem as libs de 32-bit instaladas. Se instalou o suporte a armhf como mostrado na seção anterior, pode executar normalmente.
+> **Nota**: O `hello_32` **não vai executar diretamente** no Raspberry Pi OS puro de 64-bit sem as libs de 32-bit instaladas. Se instalou o suporte a armhf como mostrado na seção anterior, você pode executar normalmente.
 
 
 ## Comparando os dois binários
+
+> A partir daqui eu vou parecer um pouco repetitivo com alguns comandos, mas meu objetivo é que você se familiarize e realmente entenda o que é cada um e o que eles nos dizem. Continuando...
 
 ```bash
 # Tamanho dos binários
