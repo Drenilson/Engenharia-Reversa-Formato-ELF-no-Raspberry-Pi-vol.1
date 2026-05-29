@@ -236,9 +236,6 @@ uname -m
 # Verificar se é 64-bit
 getconf LONG_BIT
 
-# Informações detalhadas do hardware
-cat /proc/cpuinfo | grep "model name" | head -1
-
 # Ver arquitetura do kernel
 arch
 ```
