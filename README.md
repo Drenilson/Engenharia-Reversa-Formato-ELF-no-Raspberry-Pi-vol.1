@@ -23,7 +23,7 @@
    - Magic Number e campos essenciais
    - Diferenças entre ELF32 e ELF64
 5. [Parte Prática com Editor Hex (ht)](#5-parte-prática-com-editor-hex-ht)
-   - Instalando e navegando no `ht`
+   - Instalando e navegando no `hte`
    - Analisando o ELF byte a byte
 
 
