@@ -3,7 +3,7 @@
 
 
 > **Para quem é este guia?**
-> Para qualquer pessoa curiosa sobre como os programas realmente funcionam por baixo dos panos, especialmente estudantes de Segurança, Engenharia Reversa e Sistemas Operacionais que tem um Raspberry Pi 4/5. Você não precisa saber nada de ELF para começar. Vamos construir o conhecimento juntos, tijolo por tijolo.
+> Para qualquer pessoa curiosa sobre como os programas realmente funcionam por baixo dos panos, especialmente estudantes de Cibersegurança, Engenharia Reversa e Sistemas Operacionais e que possuem um belo Raspberry Pi 4 em mãos. Você não precisa saber nada de ELF para começar. Vamos construir o conhecimento juntos, tijolo por tijolo.
 
 
 ## Sumário
