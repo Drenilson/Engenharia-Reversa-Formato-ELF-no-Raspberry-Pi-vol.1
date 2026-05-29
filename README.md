@@ -158,7 +158,7 @@ sudo apt install -y file
 sudo apt install -y xxd
 
 # ht: editor hex avançado com modo visual no terminal
-sudo apt install -y ht
+sudo apt install -y hte
 
 # ltrace e strace: rastrear chamadas de sistema e biblioteca
 sudo apt install -y strace ltrace
@@ -453,7 +453,9 @@ BuildID[sha1]=..., for GNU/Linux 3.2.0, not stripped
 
 ## Comparando os dois binários
 
-> A partir daqui eu vou parecer um pouco repetitivo com alguns comandos, mas meu objetivo é que você se familiarize e realmente entenda o que é cada um e o que eles nos dizem. Continuando...
+> A partir de agora, vou repetir alguns comandos intencionalmente.
+> Pode parecer repetitivo (e realmente é), mas esse é o objetivo: familiarizar você com as ferramentas e comandos mais usados, para que você entenda claramente o que cada um faz e qual informação importante ele nos traz.
+> Repetir os comandos ajuda a fixar o conhecimento na prática. Vamos continuar!
 
 ```bash
 # Tamanho dos binários
