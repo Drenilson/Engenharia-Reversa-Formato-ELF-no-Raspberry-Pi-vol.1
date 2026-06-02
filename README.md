@@ -31,22 +31,15 @@
 
 ## O que é um arquivo ELF?
 
-Imagine que você escreveu uma receita de bolo em português. Para que outra pessoa consiga fazer o bolo, ela precisa:
-
-1. Entender o **idioma** (português)
-2. Saber a **ordem** dos ingredientes e dos passos
-3. Ter os **utensílios** certos (forno, batedeira, etc.)
-
-Um **executável** é como essa receita, mas para o computador. O problema é: cada sistema operacional "fala um idioma diferente" para cada tipo de executável. O **ELF** é o formato que o **Linux** (e sistemas Unix-like) usa para entender seus programas.
+Imagine que você escreveu uma receita de bolo em português. Para outra pessoa conseguir prepará-la, ela precisa entender o idioma, a ordem dos passos e ter os utensílios certos.
+Um executável é como essa receita, mas para o computador. O ELF (Executable and Linkable Format) é o "idioma" que o Linux (e outros sistemas Unix-like) usa para entender programas.
 
 > **ELF = Executable and Linkable Format**
 > (Formato Executável e Linkável)
 
-Quando você digita `./meu_programa` no terminal Linux, o kernel lê o arquivo ELF, entende onde está o código, onde estão os dados, quais bibliotecas precisa carregar e só então começa a executar. O ELF é esse "contrato" entre o seu programa e o sistema operacional.
-
-### ELF não serve só para executáveis!
-
-O ELF é usado em três cenários principais:
+Quando você executa ./meu_programa, o kernel lê o arquivo ELF, descobre onde está o código, os dados, quais bibliotecas carregar e só então inicia a execução.
+ELF não serve apenas para executáveis
+O ELF é versátil e usado em três principais tipos de arquivo:
 
 ```
 ┌────────────────────────────────────────────────────┐
